@@ -1,12 +1,34 @@
 h1 {
   text-align: center;
+  color: #FF8247;
+  font-size: 4em;
 }
 h2 {
   text-align: center;
+  color: #FF8247;
+  font-size: 1.5em;
 }
 h4 {
   text-align: center;
+  font-family: 'Slabo 27px', sans-serif;
+  color: #FF8247;
 }
 p {
   margin: 0px 350px 0px 350px;
+  color: #FF8247;
 }
+html {
+  background: #F0F8FF;
+  font-family: 'Slabo 27px', sans-serif;
+}
+li {
+  padding-bottom: 5px;
+  margin-left: 38%
+}
+li a {
+  color: #FF8247;
+}
+
+
+blue    #F0F8FF
+orange
