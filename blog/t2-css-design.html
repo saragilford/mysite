@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Margins, Borders, Padding</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>Margins, Borders, and Padding</h1>
+  <h2>Oh my!</h2>
+  <h4>January 23, 2015</h4>
+
+  <section>
+    <p>
+      <!-- Text goes here! -->
+Alright, let's say we're building a fan site about the Wizard of Oz (don't ask questions, you super fan, you!). We want to put a picture of Dorothy on our page, and at some point, move her around and maybe put a nice little frame around her image. But first, we need to understand the foundation of how CSS sees the picture: an <strong>element</strong>, surrounded by <strong>padding</strong>, a <strong>border</strong>, and a <strong>margin</strong>, respectively. Let's get our girl Dorothy to demonstrate.
+    </p>
+
+    <p class="caption">To make it easier to see what we're talking about, I'm going to use color to fill in the margin and the padding. When you start your own CSS projects, the margin and padding will be transparent.</p>
+    <p>
+        <!-- Text goes here! -->
+        So first, we've got Dorothy. Dorothy is our element--she's the content, the big kahuna. Elements are any 'things' in your html: images, links, text, lists.
+    </p>
+    <img src="../imgs/step1.png" width="454px" height="325px"/>
+    <p class="caption">Shocking, I know!</p>
+    <h2>Padding</h2>
+    <p>
+        <!-- Text goes here! -->
+        Now, check out the pink space. That's our <strong>padding</strong>. The padding is the space between the space and the border. Okay, let's see what the padding looks like set to 0px:
+    </p>
+    <img src="../imgs/step2.png" width="454px" height="383px" />
+    <p>
+      Look at Dorothy in relation to the yellow border. Do you see any pink space?
+    </p>
+    <p>
+      Now, let's set our padding to 300px:
+    </p>
+    <img src="../imgs/step3.png" width="454px" height="355px" />
+    <p>Whoa! See the space between Dorothy and the border? That's our padding.
+    </p>
+    <h2>Borders</h2>
+    <p>Alright, so you know what your <strong>border</strong> is (the yellow guy). It's there for a little visual flourish. You can make it bigger, smaller, dotted, dashed, any color, or, you can make it entirely invisible.</p>
+<img src="../imgs/step4.png" width="454px" height="400px" />
+<p class="caption">Check me out, I'm dotted!</p>
+    <h2>Margin</h2>
+    <p>Let's check out our margin. See that green section? That's the <strong>margin</strong>. The margin is the distance between the border and the any other objects around your element (other elements, the edsge of the screen, etc). For now, let's bring in Toto to help us out.</p>
+    <img src="../imgs/step5.png" width="454px" height="452px" />
+    <p class="caption">Oh hey Toto</p>
+    <p>Let's start out by setting the top margin to 0px. See that? Dorothy moves is directly underneath Toto. No green on top.</p>
+    <img src="../imgs/step6.png" width="454px" height="445px" />
+      <p>Now, let's set our top margin to 100px. What we're doing here is creating an 100px buffer zone on the top side of Dorothy, where no other element can touch her. This, in turn, moves her 100px towards the bottom of the page. Check it out:
+      </p>
+      <img src="../imgs/step7.png" width="454px" height="474px" />
+      <p>And there we have it. Now go build your own CSS Emerald City.</p>
+      <br>
+      <br>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</body>
+</html>
+
