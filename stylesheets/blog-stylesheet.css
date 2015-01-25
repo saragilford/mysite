@@ -1,3 +1,6 @@
+body {
+  margin: 0px;
+}
 h1 {
   text-align: center;
   color: #FF8247;
@@ -43,6 +46,10 @@ img {
   margin-right: auto;
   padding: 5px;
 }
-
-blue    #F0F8FF
-orange
+#footer {
+  background-color: #CBCBCB;
+  padding: 10px;
+}
+#footer p {
+  color: #FF8247;
+}

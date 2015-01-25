@@ -1,6 +1,9 @@
 html {
   background-color: #FF8247;
 }
+body {
+  margin: 0px;
+}
 h1 {
   font-weight: bold;
   font-size:6em;
@@ -16,7 +19,7 @@ h1 {
   color: #F0F8FF;
   display: inline-block;
   border: 1px solid #f6f3e0;
-  margin: 0 5px 0 38%;
+  margin-right: 5px;
   text-align: center;
 }
   #portfolio {
@@ -38,6 +41,11 @@ h1 {
   border: 1px solid #f6f3e0;
   text-align: center;
 }
+#buttons {
+  display: block;
+  margin-right: 38%;
+  margin-left: 36%;
+  }
 a {
   text-decoration: none;
   font-family: 'Slabo 27px';
@@ -56,8 +64,17 @@ div p {
   font-family: 'Slabo 27px';
   color: #F0F8FF;
   font-size: 2em;
-  margin: 0px 450px 0px 450px;
+  margin: 0px 30% 0px 30%;
 }
 img {
-  margin: 50px 0px 0px 33%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact {
+  background-color: #CBCBCB;
+  padding: 10px;
+}
+#contact p {
+color: #F0F8FF;
 }
