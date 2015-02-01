@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hashes and Arrays</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>Arrays and Hashes</h1>
+  <h2>Learn about lists, with help from the Aquabats.</h2>
+  <h4>February 1, 2015</h4>
+
+  <section>
+    <p>
+      Arrays and hashes are types of lists that keep track of objects. Today we're looking at two questions: first, how do we use them; and second, how are they different? Well, let's grab our friends the Aquabats, and take 'em for a test-drive.
+    </p>
+    <div class="video_embed">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/fK5CLplRIno" frameborder="0" allowfullscreen></iframe></div>
+    <p class='caption'>The most beautiful ode to public school lunches in recent memory </p>
+    <p>
+        Let's say we're starting public school with the Aquabats, and we want create a list, in order, of what the cafetieria lunch is this week. Since we just want a simple list, Lets start by crerating an array called 'lunch'. We'd type:</p>
+<div class="long_code">
+  <script src="https://gist.github.com/saragilford/98f7da3369d31c4091c6.js"></script>
+</div>
+       <p>Each object in the array is assigned an <strong>index</strong>, which is a number that allows Ruby to keep track of the order of objects. The index starts at 0, meaning that in our array, 'hot dogs' is at index 0, 'tacos' is at index 1, 'hamburgers and chocolate milk' is at index 2, and so on.</p>
+       <p>So, if we wanted to know what we're having for lunch on Thursday, we'd figure out that on Thursday we're eating the fourth meal of the week, which means its at index 3 (remember, we're counting from 0). We would look it up by typing something like this:</p>
+<div class="small_code"><script src="https://gist.github.com/saragilford/22be3cea1467c25b1dfb.js"></script></div>
+    </p>
+    <p>But doesn't that seem kind of annoying? I mean, am I really supposed to go through the tedious process of figuring out which index corresponds to which day of the week EVERY SINGLE TIME? Isn't there a way that I could just say "Wednesday" and Ruby would know I was talking about "hamburgers and chocolate milk"?
+    </p>
+    <h2>
+      Enter: hashes.
+    </h2>
+    <p>Hashes are lists of linked objects. So if we were creating a hash called lunch that would tell us our lunch schedule for this week, including which day we will have each meal, we'd type:</p>
+<div class="med_code"><script src="https://gist.github.com/saragilford/464b3dc5a23aa36f2251.js"></script></div>
+    <p>As you can see, we now have a list where 'Monday' is linked to 'hot dogs', 'Tuesday' is linked to 'tacos' and so on. </p>
+    <p>Within our hash, the objects in the column that includes the days of the week are called <strong>keys</strong>, and the objects in the column that includes the meals are called <strong>values</strong>. You can look up a corresponding object by either.<p>
+    <p>For example, if we want to know which day we're having tacos, we would type:</p>
+<div class="small_code"><script src="https://gist.github.com/saragilford/a9c032aec6d5887a6580.js"></script></div>
+<p>and we'd get a result of:</p>
+<div class="small_code"><script src="https://gist.github.com/saragilford/e47bb0f7c3f6c402a9d8.js"></script></div>
+    <p>And if we want to know what we're having for lunch on Friday, we could just type:</p>
+<div class="small_code"><script src="https://gist.github.com/saragilford/1eb5864709af844f7be7.js"></script></div>
+<p>and we'd get a result of:</p>
+<div class="med_code"><script src="https://gist.github.com/saragilford/10ae1c6a25e0017006ee.js"></script></div>
+</p>
+<h2>HOORAY FOR PIZZA DAY!</h2>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <div id="footer"><p>Contact Me | 408.839.4992 | sara dot gilford at gmail | twitter: @sbgdbc</p>
+    </div>
+</body>
+</html>
+

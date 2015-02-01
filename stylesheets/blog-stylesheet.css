@@ -53,3 +53,25 @@ img {
 #footer p {
   color: #FF8247;
 }
+.video_embed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 420px;
+}
+.long_code {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.med_code {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.small_code {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
