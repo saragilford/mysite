@@ -5,16 +5,24 @@ h1 {
   text-align: center;
   color: #FF8247;
   font-size: 4em;
+  margin-top: 50px;
+  margin-bottom: 0px;
+
 }
 h2 {
   text-align: center;
   color: #FF8247;
   font-size: 2em;
+  font-style: oblique;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 h4 {
   text-align: center;
   font-family: 'Slabo 27px', sans-serif;
   color: #FF8247;
+  margin-bottom: 100px;
+  margin-top: 10px;
 }
 p {
   margin: 0px 350px 0px 350px;
@@ -49,6 +57,7 @@ img {
 #footer {
   background-color: #CBCBCB;
   padding: 10px;
+  margin-top: 50px;
 }
 #footer p {
   color: #FF8247;
@@ -75,3 +84,11 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+a {
+  color: #00004c;
+}
+tt {
+  color: #00004c;
+  font-size: 1.1em;
+}
+

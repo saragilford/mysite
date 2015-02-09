@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enumberable Methods: Map</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>How the Map Method Works</h1>
+  <h2>A brief look at enumberable methods.</h2>
+  <h4>February 6, 2015</h4>
+
+  <section>
+    <p>
+      Say we have an array of integers, and we want to add 1 to each integer in our array. We'd want to use <tt>#each</tt>, right? Well, not so fast. Let's see what happens when we try to use <tt>#each</tt>.
+    </p>
+    <div class="med_code"><script src="https://gist.github.com/saragilford/429968750592618fc131.js"></script>
+    </div>
+    <p>
+      Womp womp.
+    </p>
+    <p>
+      So why can't we just use <tt>#each</tt>? Well, <tt>#each</tt> will always return your original array. Imagine your array as a bookshelf, and each object in the array as a book.<tt>#each</tt> takes each book off the shelf and looks at it, but ultimately just puts it back in the same place unaltered. So what method would we use if we wanted to dog-ear page 75 in each book before we put it back on the shelf? In other words, what if we wanted to to get a modified version of an array? Well, that's where <tt>#map</tt> comes in.
+        <!-- Text goes here! -->
+    </p>
+    <p>
+      <tt>#map</tt> takes each object in the array, and runs it through your block of code, and returns a modified array.
+        <!-- Text goes here! -->
+    </p>
+    <p>
+      So if we run our same array using <tt>#map</tt> instead of <tt>#each</tt>, here's what we get:
+    </p>
+    <div class="med_code"><script src="https://gist.github.com/saragilford/438904bbccd5dfb6a7f1.js"></script>
+    </div>
+    <p>Success!
+    <p>
+      A note here: while <tt>#map</tt> does return a modified version of the array, it doesn't change the array itself. You can still call on it by typing the name of your array. To use our bookshelf metaphor, <tt>#map</tt> can dog-ear each book, if you want your books clean again, Ruby will unfold the corners. Check it out:
+    </p>
+    <div class="med_code"><script src="https://gist.github.com/saragilford/0226c498d37648ce4d1b.js"></script></div>
+    <p>
+      If you do want to fundamentally alter the array itself--say tear out the very last page of every book--you'd want to use <tt>#map!</tt>:
+    </p>
+    <div class="med_code"><script src="https://gist.github.com/saragilford/e6115453c1dd06057af0.js"></script>
+    </div>
+    <img src="../imgs/rhino2.png" width="50px" />
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <div id="footer"><p>Contact Me | 408.839.4992 | sara dot gilford at gmail | twitter: @sbgdbc</p>
+    </div>
+</body>
+</html>
+
