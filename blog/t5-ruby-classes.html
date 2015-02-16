@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby Classes</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>We're About to Play Quidditch, Y'all</h1>
+  <h2>A Very Potter Primer of Ruby Instance Methods</h2>
+  <h4>February 13, 2015</h4>
+
+  <section>
+    <p>
+      You're Harry Potter! (Or, if you'd rather be Malfoy, go crazy.) And we're going to play some Quidditch, by way of ruby instance methods.
+    </p>
+    <img src="http://gifrific.com/wp-content/uploads/2012/04/harry-potter-wicked.gif" />
+    <p>
+      Why do we use ruby instance methods? Well, instance methods allow us to keep track of our variables across different methods. Let's take our game of Quidditch as an example. We're going to want to keep track of score, shoot, and chase the snitch, while keeping both teams constant. This means we'll be using a bunch of different methods but need to keep certain variables stable throughout each. And that's why we create a class.
+    </p>
+    <p>
+      Before we start creating our game, here's quick refresher of the rules of Quidditch:
+      <ul>
+        <li>If your team shoots the quaffle through one of the opponent's hoops, you get 10 points.</li>
+        <li>If your team catches the snitch, the game is over, and you get 150 points. If the 150 points knocks your score above the other team's score, you win! Otherwise, they win.</li>
+      </ul>
+    </p>
+    <p>
+      The first thing we're going to want to do is set up our class. We're going to type:
+    </p>
+    <div class="small_code">
+      <script src="https://gist.github.com/saragilford/8f9f3711a56b8e064d36.js"></script>
+    </div>
+    <p class="caption">
+      Notice how the <tt>Q</tt> in <tt>Quidditch</tt> is capitalized. That's good class syntax. Capitalize the first letter of each word in your class, and skip the dashes and underscores.
+    </p>
+    <p>
+      Then, we have to create a method to initialize our instance. This basically sets up the parameters for our instance. For our Quidditch game, we want to set up our preliminary variables for the team:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/4a2f9a438130087639ea.js"></script>
+    </div>
+    <p>
+      I'm starting off by setting the score of each team to zero (since the game hasn't even begun yet). I'm also setting up conditions for missing and making a shot—you'll see how the work shortly.
+    </p>
+    <p>Once we're initialized, we can really get started. First, let's add a method to tell us what the score is:
+    </p>
+    <div class="long_code">
+      <script src="https://gist.github.com/saragilford/d65e2e88e68537e7ce58.js"></script>
+    </div>
+    <p>
+      See how we can just say <tt>#{@your_team}</tt> instead of setting a new variable for <tt>your_team</tt> each time? That's the beauty of classes.
+    </p>
+    <p>
+      Let's finish up setting up our instance method, so we have a working Quidditch game:
+    </p>
+    <div class="long_code">
+      <script src="https://gist.github.com/saragilford/130d696eb9ffd811e748.js"></script>
+    </div>
+    <p>
+      And, we're ready to start our game! First we're going to create our instance (aka assign this specific match a name). Since this is our very first game, let's call it <tt>game_1</tt>. We're going to play as Gryffyndor, and play against Slytherin.
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/024c8e1ece315eef1ef3.js"></script>
+    </div>
+    <p>
+      Now, let's check out our scoreboard:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/dfa53d1d46b81402784f.js"></script>
+    </div>
+    <p>
+      As you can see, the score right now is zero for both teams. Now let's get to the action!
+    </p>
+    <p>
+      First, you shoot the quaffle:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/499a7a0dc2ca6c27ff9d.js"></script>
+    </div>
+    <p>
+      Woohoo, you made it, and got your team ten points!
+    </p>
+    <p>
+      But don't celebrate just yet. Slytherin grabs the quaffle and jets toward your hoops. Let's watch them shoot:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/1e761c7604dcbd4e63ae.js"></script>
+    </div>
+    <p>
+      Nice! They missed! Let's check our scoreboard again:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/b72aad403b4c6e3cbd6b.js"></script>
+    </div>
+    <p>
+      See how the scoreboard is able to reflect the current score, even though our shoot method is entirely separate from our scoreboard method? That's our class at work.
+    </p>
+    <p>
+      But wait! Out of the corner of your eye, you can see the golden snitch. Let's make a mad dash for it:
+    </p>
+    <div class="long_code">
+      <script src="https://gist.github.com/saragilford/a0be192dd2f4efef0975.js"></script>
+    </div>
+    <p>Nice work first-year! You won the game. This round of butterbeer's on you.
+    </p>
+    <img src="http://www.survivingcollege.com/wp-content/uploads/2013/09/gryffindor-cheering-quidditch-dean-thomas.gif" />
+    <img src="../imgs/rhino2.png" width="50px" />
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <div id="footer"><p>Contact Me | 408.839.4992 | sara dot gilford at gmail | twitter: @sbgdbc</p>
+    </div>
+</body>
+</html>
+
