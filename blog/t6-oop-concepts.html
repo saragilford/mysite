@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blocks, Procs, and Lambdas</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>Blocks, Procs, and Lambdas</h1>
+  <h4>February 21, 2015</h4>
+
+  <section>
+    <p>
+      If you've ever defined a method in Ruby, you know what a block is. That stuff between <tt>def method</tt> and <tt>end</tt>? That's your block. Let's say we're want to create a method that uses that hackey formula to figure out the minimum age a person must be for you to date them without being sketchy (I know this very concept is SO GROSS but please bear with me).
+    </p>
+    <div class="small_code">
+    <script src="https://gist.github.com/saragilford/5fae43d069149a0b7116.js"></script>
+    </div>
+    <p class="caption">
+      Your block here is <tt>(x/2)+7</tt>.
+    </p>
+    <p>
+      Blocks are excellent foundational tools in Ruby--they're the ones to get things done. But what happens if you need to use a block multiple times in the same project? Do you really want to keep typing the same thing OVER and OVER and OVER again?
+    </p>
+    <p>
+      If you answer was no, I'd rather have more free time to watch Drake videos, then procs might be for you. Procs are sort of like "saved" blocks--they're bits of code that, once defined, can be used basically anywhere throughout your project.
+    </p>
+    <p>
+      Let's say we want to take our age calculation from above and apply it to every age between 25 and 35. We're not going to waste our time typing out our block for EVERY SINGLE NUMBER--we're young and have lives to lead. Instead, we're going to create a proc called <tt>age_calculator</tt> that can give us the same result:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/63823da9f23b018ce394.js"></script>
+    </div>
+    <p class="caption">
+      A syntax thing to note here: the 'P' in <tt>Proc</tt> MUST be capitalized.
+    </p>
+    <p>
+      Once our proc has been defined, we're ready to use it. Here's how we call it:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/ccd99e62dc2aef6acd62.js"></script>
+    </div>
+    <p>
+      Here, we've taken each number between 25 and 35, put it in an array, and used <tt>map!</tt> and our proc (called using an ampersand and the proc's name) to return an array of the minimum ages for each age.
+    </p>
+    <img src="../imgs/rhino2.png" width="50px" />
+    <p>
+      Okay, so we know what blocks and procs do, but what about lambdas? Well, lambdas are <i>nearly</i> identical to procs--they're both ways of "saving" blocks. Here's how we'd write our above calculation using lambdas:
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/c31b4e2057b8189d812c.js"></script>
+    </div>
+    <p>
+      The difference betwwen the two is slight. Procs have an itchy trigger finger: a proc will return its value, even if it's not the very last item in your method. Lambdas, on the other hand, will run through the entire method first. If the lambda is not the last step, your method won't return the result of the lambda. Lambdas will also give you an error message if you give them the wrong number of arguments, whereas procs will just go ahead an fill the empty arguments with <tt>nil</tt>.
+    </p>
+    <img src="../imgs/rhino2.png" width="50px" />
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <div id="footer"><p>Contact Me | 408.839.4992 | sara dot gilford at gmail | twitter: @sbgdbc</p>
+    </div>
+</body>
+</html>
+
