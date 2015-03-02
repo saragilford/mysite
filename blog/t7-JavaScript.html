@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+</head>
+
+<body>
+
+  <h1>Ruby Hashes vs. JavaScript Objects</h1>
+  <h4>March 1, 2015</h4>
+
+  <section>
+    <p>
+      You know the old Ruby saying: <i>everything</i> is an object. (While that's not true a full 100% of the time, it gets us by.) But in JavaScript, an object means something very specific.
+    </p>
+    <p>
+       An object in JavaScript is a collection of properties. In other words, its a variable that contains a bunch of other variables connected to that first variable. Let me show you an example:
+    </p>
+    <div class="small_code">
+      <script src="https://gist.github.com/saragilford/bd36512a1ac178a22fc6.js"></script>
+    </div>
+    <p>
+      Let's diagram this. <tt>simpson</tt> is our object. What makes it an object, as opposed to just a variable, is the fact that it contains multiple properties (<tt>mother, father, sister, brother</tt>). Each property is, in turn, linked to a value (<tt>"Marge", "Homer", "Lisa", "Bart"</tt>).
+    </p>
+    <p>That means that when we call <tt>console.log</tt> on <tt>simpson["daughter"]</tt> as so...
+    <div class="small_code">
+      <script src="https://gist.github.com/saragilford/ef45476b21eb5d714884.js"></script>
+    </div>
+    <p>
+      We get the answer <tt>"Lisa"</tt>.
+    </p>
+    <p>
+      Does this remind you of anything? How about Ruby hashes? Yup, that's right. Let's check out our favorite family as a hash.
+    </p>
+    <div class="med_code">
+      <script src="https://gist.github.com/saragilford/8111e5b1808ac8ee3826.js"></script>
+    </div>
+    <img src="../imgs/rhino2.png" width="50px" />
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+  <div id="footer"><p>Contact Me | 408.839.4992 | sara dot gilford at gmail | twitter: @sbgdbc</p>
+    </div>
+</body>
+</html>
+
