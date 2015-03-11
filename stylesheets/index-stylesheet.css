@@ -1,8 +1,12 @@
 html {
-  background-color: #FF8247;
+  background-image: url("../imgs/background_pic.jpg");
+  background-size: 1500px 1200px;
+  height: 100%;
 }
 body {
   margin: 0px;
+  height: 100%;
+  padding: 0px;
 }
 h1 {
   font-weight: bold;
@@ -11,70 +15,82 @@ h1 {
   font-family: 'Slabo 27px';
   color: #F0F8FF;
   margin-bottom: 5px;
+  background-color: #FF8247;
+  width: 80%;
+  height: 15%;
+  margin-top: 3%;
 }
 #resume {
-  height: 40px;
-  width: 100px;
-  background-color: #CBCBCB;
-  color: #F0F8FF;
-  display: inline-block;
-  border: 1px solid #f6f3e0;
-  margin-right: 5px;
-  text-align: center;
+  background-color: #ff4768;
+  width: 40%;
+  height: 12%;
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  right: 0%;
 }
   #portfolio {
-  height: 40px;
-  width: 100px;
-  background-color: #CBCBCB;
-  color: #F0F8FF;
-  display: inline-block;
-  border: 1px solid #f6f3e0;
-  margin-right: 5px;
-  text-align: center;
+  background-color: #ffde47;
+  width: 45%;
+  height: 12%;
+  text-align: left;
+  position: absolute;
+  right: 0%;
+  top: 55%;
 }
 #blog {
-  height: 40px;
-  width: 100px;
-  background-color: #CBCBCB;
-  color: #F0F8FF;
-  display: inline-block;
-  border: 1px solid #f6f3e0;
-  text-align: center;
+  background-color: #ffb694;
+  width: 40%;
+  height: 12%;
+  text-align: left;
+  position: absolute;
+  right: 0%;
+  top: 75%;
 }
-#buttons {
-  display: block;
-  margin-right: 38%;
-  margin-left: 36%;
-  }
 a {
   text-decoration: none;
   font-family: 'Slabo 27px';
   color: #F0F8FF;
-  font-size: 1.5em
+  font-size: 4em;
+  padding-left: 10px;
 }
 a:hover {
   font-weight: bold;
 }
-div p {
-  padding: 0px;
-  text-align: center;
-}
 #about-me {
-  text-align: center;
+  background-color: #CBCBCB;
+  background: rgba(203,203,203,0.5);
+  float: left;
+  text-align: left;
   font-family: 'Slabo 27px';
   color: #F0F8FF;
   font-size: 2em;
-  margin: 0px 30% 0px 30%;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10px;
+  margin-left: 150px;
+  margin-right: 900px;
+  margin-top: 170px;
 }
 #contact {
   background-color: #CBCBCB;
-  padding: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
 }
 #contact p {
-color: #F0F8FF;
+  color: #F0F8FF;
+  text-align: center;
+  margin: 0px;
 }
+#contact img {
+  margin-top: 5px;
+  position: relative;
+  bottom: -9px;
+}
+#contact-link {
+  color: #F0F8FF;
+  font-size: 1em;
+  padding-left: 0px;
+}
+
